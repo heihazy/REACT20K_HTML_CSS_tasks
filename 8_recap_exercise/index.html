@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Third Week Recap</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="logo" />
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="hero-banner" id="home">
+        <div class="wrapper">
+          <h1>Welcome to our homepage!</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+          <button class="cta" href="#about-us">Read More</button>
+        </div>
+      </div>
+      <div id="about-us">
+        <div class="about-wrap">
+          <h2>About Us</h2>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English. Many desktop publishing
+            packages and web page editors now use Lorem Ipsum as their default
+            model text, and a search for 'lorem ipsum' will uncover many web
+            sites still in their infancy. Various versions have evolved over the
+            years, sometimes by accident, sometimes on purpose (injected humour
+            and the like).
+          </p>
+        </div>
+        <img
+          src="https://source.unsplash.com/collection/985268"
+          alt="aesthetic"
+          width="20%"
+          height="20%"
+        />
+      </div>
+    </main>
+    <footer>
+      <div class="contact" id="contact">
+        <div class="form-wrap">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+
+            <input type="text" name="first-name" id="first-name" />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+
+            <input type="text" name="last-name" id="last-name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <legend>Would you like to sign up?</legend>
+            <input type="radio" name="signup" id="yes" />
+            <label for="yes">Yes</label>
+            <input type="radio" name="signup" id="no" />
+            <label for="no">No</label>
+          </div>
+          <div class="form-group">
+            <legend>How did you know about us?</legend>
+
+            <input type="checkbox" name="checkbox1" value="Friend told me" />
+            <label for="checkbox1">Friend told me</label>
+
+            <input
+              type="checkbox"
+              name="checkbox2"
+              value="Saw on social media"
+            />
+            <label for="checkbox2">Saw on social media</label>
+
+            <input type="checkbox" name="checkbox3" value="Found by myself" />
+            <label for="checkbox3">Found by myself</label>
+
+            <input type="checkbox" name="checkbox4" value="Other:" />
+            <label for="checkbox4">Other</label>
+
+            <textarea
+              name="other"
+              id="other"
+              cols="30"
+              rows="10"
+              placeholder="How?"
+            ></textarea>
+          </div>
+        </div>
+        <div id="contact-text">
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be sure there isn't anything embarrassing hidden in the
+            middle of text. All the Lorem Ipsum generators on the Internet tend
+            to repeat predefined chunks as necessary, making this the first true
+            generator on the Internet. It uses a dictionary of over 200 Latin
+            words, combined with a handful of model sentence structures, to
+            generate Lorem Ipsum which looks reasonable. The generated Lorem
+            Ipsum is therefore always free from repetition, injected humour, or
+            non-characteristic words etc.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
