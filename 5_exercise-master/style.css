@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background: #1e5c55;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-left: 25px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 25px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 20px;
+  color: #ffffff;
+}
+
+nav ul li a:hover {
+  background-color: aquamarine;
+}
+
+#past {
+  background: url("https://source.unsplash.com/BB6YpCHmW3I") no-repeat fixed
+    center center/cover;
+}
+
+#future {
+  background: url("https://source.unsplash.com/E_iE6rj9Pbo/1600x900") no-repeat
+    fixed center center/cover;
+}
+
+#past img {
+  float: left;
+  max-width: 20%;
+  max-height: 20%;
+  border-radius: 10%;
+}
+
+h2 {
+  line-height: 2rem;
+}
+
+.container {
+  max-width: 600px;
+  background-color: rgba(243, 245, 244, 0.911);
+  text-align: justify;
+  opacity: 0.75;
+  margin: 0 auto;
+  padding: 10px 40px;
+}
+
+#contact {
+  text-align: center;
+  background-color: #1e5c55;
+  font-size: small;
+  padding: 10px;
+}
+
+h3 {
+  color: #ffffff;
+}
