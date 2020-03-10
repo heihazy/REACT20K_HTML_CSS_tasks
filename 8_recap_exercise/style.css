@@ -44,36 +44,40 @@ nav ul li a:hover {
 }
 
 .hero-banner {
-  background: url("https://source.unsplash.com/collection/4539829/") no-repeat
-    fixed center center/cover;
+  background: url("https://source.unsplash.com/collection/4539829/") no-repeat fixed center center/cover;
   height: 80vh;
 }
 
 .wrapper {
-  position: relative;
+  position: absolute;
   text-align: justify;
-  background-color: rgba(161, 130, 119, 0.75);
-  width: 40%;
-  top: 40%;
-  left: 5%;
+  background-color: rgba(221, 131, 98, 0.75);
+  width: 30%;
+  top: 50%;
+  left: 10%;
   color: #ffffff;
-  padding: 0 20px;
+  padding: 20px;
 }
 
 .wrapper .cta {
   background-color: darkseagreen;
-  color: #ffffff;
   padding: 10px;
-  width: 20%;
+  width: 30%;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: bold;
-  margin: 15px;
+  margin: 15px 0;
   font-family: "Noto Sans KR", sans-serif;
+}
+
+.cta a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .wrapper .cta:hover {
   background-color: darkgreen;
+  cursor: pointer;
 }
 
 .about-wrap {
@@ -102,9 +106,9 @@ footer {
   background-color: #333333;
   color: #ffffff;
   padding-top: 1em;
-}
-#contact {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .form-wrap {
@@ -112,26 +116,69 @@ footer {
   flex-direction: column;
 }
 
-.form-group {
-  margin: 20px;
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0;
 }
 
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
+.survey {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
 }
 
-.form-group input {
-  padding: 10px;
+.info input {
   border-radius: 5px;
   box-shadow: none;
-  width: 80%;
+  width: 200px;
+  margin-left: 30px;
+  padding: 5px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.form-wrap label {
+  font-size: 0.8rem;
+}
+
+.survey label {
+  margin-left: 30px;
+}
+
+textarea {
+  font-family: "Noto Sans KR", sans-serif;
+  margin-bottom: 20px;
+}
+
+#submit {
+  background-color: darkseagreen;
+  color: #ffffff;
+  padding: 10px;
+  width: 20%;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-bottom: 30px;
+}
+
+#submit:hover {
+  background-color: darkgreen;
+  cursor: pointer;
+}
+
+hr {
+  margin: 10px 0;
 }
 
 #contact-text {
   display: flex;
+  flex-direction: column;
   max-width: 600px;
-  margin-left: 400px;
-  margin-top: 50px;
+}
+
+#contact-text p {
   line-height: 2rem;
+  margin-top: 20px;
 }
