@@ -14,15 +14,21 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-window.onresize = function(event) {
-  viewportwidth = $(window).width();
-  if (viewportwidth < 769) {
-    $(".dropdown").click(function(e) {
-      e.preventDefault();
-      $(this).removeClass("nav");
-    });
-    $(".dropbtn").click(function() {
-      $(".dropdown").css("display", "block");
-    });
+function toggleNav() {
+  if (document.documentElement.clientWidth < 900) {
+    checkNavbarVisibility();
   }
-};
+}
+
+function showNav() {
+  if (document.documentElement.clientWidth > 900) {
+    checkNavbarVisibility();
+  }
+}
+
+function checkNavbarVisibility() {
+  var dropDownContent = document.querySelector(".dropdown-content");
+  dropDownContent.style.display == "block"
+    ? (dropDownContent.style.display = "none")
+    : (dropDownContent.style.display = "block");
+}
