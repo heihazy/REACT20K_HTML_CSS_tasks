@@ -13,3 +13,16 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+window.onresize = function(event) {
+  viewportwidth = $(window).width();
+  if (viewportwidth < 769) {
+    $(".dropdown").click(function(e) {
+      e.preventDefault();
+      $(this).removeClass("nav");
+    });
+    $(".dropbtn").click(function() {
+      $(".dropdown").css("display", "block");
+    });
+  }
+};
