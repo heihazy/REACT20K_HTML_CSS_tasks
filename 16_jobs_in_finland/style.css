@@ -10,20 +10,25 @@ body {
 }
 
 .logo {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   margin: 10px;
+  grid-template-columns: 2;
+  grid-template-rows: 1;
+  grid-template-areas: "logo link";
 }
 
 .logo h1 {
   color: #002ea1;
   font-weight: 700;
+  grid-area: logo;
 }
 
 .logo a {
   text-decoration: none;
   color: #002ea1;
   padding: 0;
+  grid-area: link;
+  text-align: right;
 }
 
 .logo a:hover {
@@ -37,14 +42,19 @@ nav {
   position: sticky;
   width: 100%;
   top: 0;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 1;
+  grid-template-areas: "nav search";
 }
 
 nav ul {
-  display: flex;
-  justify-content: space-between;
+  grid-area: nav;
   list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
 }
 
 nav ul li a {
@@ -64,8 +74,45 @@ nav i {
   background-color: none;
 }
 
+.search-bar {
+  grid-area: search;
+  text-align: right;
+}
+
 nav i:hover {
   cursor: pointer;
+}
+
+#subnav {
+  display: block;
+  position: absolute;
+  background-color: #ffffff;
+  width: 208px;
+  list-style-type: none;
+  z-index: 1;
+  margin-top: 20px;
+  visibility: hidden;
+}
+
+#subnav li {
+  display: block;
+}
+
+#subnav a {
+  color: #002ea1;
+  text-decoration: none;
+  font-family: "Roboto";
+  text-transform: capitalize;
+  text-align: left;
+  display: block;
+}
+
+#region:hover #subnav {
+  visibility: visible;
+}
+
+#subnav li:hover {
+  background-color: #ffffffab;
 }
 
 .toggle-search {
